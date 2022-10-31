@@ -1,2 +1,10 @@
 @import "open-props/src/index.css";
 @import "open-props/src/extra/normalize.css";
+
+canvas {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
