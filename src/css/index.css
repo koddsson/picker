@@ -1,6 +1,10 @@
 @import "open-props/src/index.css";
 @import "open-props/src/extra/normalize.css";
 
+body {
+  overscroll-behavior: contain;
+}
+
 canvas {
   height: 100vh;
   width: 100vw;
