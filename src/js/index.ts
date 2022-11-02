@@ -24,7 +24,8 @@ function drawCircle(x: number, y: number, color: string, radius = 70) {
 let waitId: number | undefined
 
 function pick() {
-  const pickedId = Math.floor(Math.random() * Object.keys(circles).length)
+  const pickedId = Number(Object.keys(circles)[Math.floor(Math.random() * Object.keys(circles).length)])
+
   for (const id of Object.keys(circles)) {
     if (pickedId === Number(id)) continue
     delete circles[Number(id)]
