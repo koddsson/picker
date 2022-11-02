@@ -21,6 +21,16 @@ function drawCircle(x: number, y: number, color: string, radius = 70) {
   ctx.stroke()
 }
 
+let waitId: number | undefined
+
+function pick() {
+  const pickedId = Math.floor(Math.random() * Object.keys(circles).length)
+  for (const id of Object.keys(circles)) {
+    if (pickedId === Number(id)) continue
+    delete circles[Number(id)]
+  }
+}
+
 function draw(event: TouchEvent) {
   if (event.type === 'touchstart') {
     for (const touch of event.changedTouches) {
@@ -28,12 +38,20 @@ function draw(event: TouchEvent) {
         color: colors.pop()!
       }
     }
+    if (waitId) {
+      window.clearTimeout(waitId)
+      waitId = undefined
+    }
+    waitId = window.setTimeout(pick, 2000)
   }
   if (event.type === 'touchend' || event.type === 'touchcancel') {
     for (const touch of event.changedTouches) {
       const circle = circles[touch.identifier]
       colors.push(circle.color)
       delete circles[touch.identifier]
+    }
+    if (waitId && Object.keys(circles).length === 0) {
+      window.clearTimeout(waitId)
     }
   }
   ctx.clearRect(0, 0, canvas.width, canvas.height)
