@@ -2,7 +2,7 @@
 @import "open-props/src/extra/normalize.css";
 
 body {
-  overscroll-behavior: none;
+  touch-action: none;
 }
 
 canvas {
@@ -11,6 +11,4 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-
-  touch-action: manipulation;
 }
