@@ -1,9 +1,7 @@
 @import "open-props/src/index.css";
 @import "open-props/src/extra/normalize.css";
 
-body {
-  touch-action: none;
-}
+html, body {touch-action: none;}
 
 canvas {
   height: 100vh;
