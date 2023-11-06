@@ -29,7 +29,7 @@
   "homepage": "https://github.com/koddsson/web-dev#readme",
   "devDependencies": {
     "@github/prettier-config": "^0.0.6",
-    "@open-wc/testing": "^3.2.0",
+    "@open-wc/testing": "^3.2.2",
     "@web/dev-server": "^0.3.3",
     "@web/dev-server-esbuild": "^0.4.4",
     "@web/rollup-plugin-html": "^2.0.1",
