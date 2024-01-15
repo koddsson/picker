@@ -30,7 +30,7 @@
   "devDependencies": {
     "@github/prettier-config": "^0.0.6",
     "@open-wc/testing": "^4.0.0",
-    "@web/dev-server": "^0.3.3",
+    "@web/dev-server": "^0.4.1",
     "@web/dev-server-esbuild": "^1.0.1",
     "@web/rollup-plugin-html": "^2.1.2",
     "@web/test-runner": "^0.18.0",
@@ -42,6 +42,7 @@
     "postcss-import": "^16.0.0",
     "postcss-jit-props": "^1.0.14",
     "prettier": "^3.2.2",
+    "rollup": "^4.9.5",
     "rollup-plugin-esbuild": "^6.1.0"
   }
 }
