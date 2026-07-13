@@ -32,7 +32,7 @@
     "@web/dev-server": "^0.4.6",
     "@web/dev-server-esbuild": "^2.0.0",
     "@web/rollup-plugin-html": "^3.0.0",
-    "@web/test-runner": "^0.20.0",
+    "@web/test-runner": "^1.0.0",
     "eslint": "^10.0.3",
     "open-props": "^1.7.8",
     "postcss": "^8.4.49",
